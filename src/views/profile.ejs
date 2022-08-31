@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+   
+    <input class="boton" type="submit" value="Desloguearse" onclick="logout()">
+    <%= `Bienvenido a la pagina ${user.email}` %>
+
+
+    <script>
+        function redireccionar(pagina) {
+         location.href = pagina;
+       }
+   
+       function logout() {
+         redireccionar('/logout');
+       }
+     </script>
+</body>
+</html>
+

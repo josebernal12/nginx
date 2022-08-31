@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Signin</title>
+</head>
+<body>
+
+  <div class="contacto">
+    <h1>Signup</h1>
+   
+     <div class="formulario">
+   
+       <form action="/signup" method="post">
+         <label class="label">E-mail</label>
+         <input class="input" name='email' placeholder="email" class="form-control" type="email" required>
+         <label class="label">Password</label>
+         <input class='input' name="password" placeholder="Password" class="form-control" type="password" required>
+   
+         <input  class="boton" type="submit" value="Signup">
+     </div>
+   
+     </form>
+   
+     <input class="boton" class="btn btn-success my-3" onclick="goSignin()" type="submit" value="Signin">
+   
+       
+     </div>
+  
+
+     <script>
+      function redireccionar(pagina) {
+       location.href = pagina;
+     }
+ 
+     function goSignin() {
+       redireccionar('/signin');
+     }
+   </script>
+</body>
+</html>
